@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# envs
+venv/
+.env
+*.pem
+
+# data & caches
+temp/
+vector_db/
+*.sqlite3
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# pip cache
+pip-wheel-metadata/
+
+
+# Uploaded PDFs or testing files
+*.pdf
