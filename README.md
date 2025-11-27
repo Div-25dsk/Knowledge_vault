@@ -1,4 +1,4 @@
-# Knowledge Vault – RAG Backend (FastAPI + Groq)
+# Knowledge Vault – RAG Backend (FastAPI + TF-IDF)
 
 A lightweight Retrieval-Augmented Generation (RAG) backend that:
 - Extracts text from PDF files  
@@ -72,6 +72,7 @@ Sends your query → finds similar chunks → returns the most relevant context 
 
 Divya Bharathi D
 Backend • Cloud • Data Enthusiast 
+
 
 
 
