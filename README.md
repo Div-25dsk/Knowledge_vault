@@ -3,16 +3,18 @@
 A lightweight Retrieval-Augmented Generation (RAG) backend that:
 - Extracts text from PDF files  
 - Splits text into chunks  
-- Creates embeddings using **Groq Embeddings API**  
-- Performs similarity search using **cosine similarity**  
-- Generates answers using **LLaMA-3 via Groq**  
-- Exposes everything through **FastAPI API routes**
+- Creates embeddings using **TF‑IDF (scikit‑learn)**  
+- Performs similarity search using cosine similarity  
+- Returns the most relevant chunks as context for answers  
+- Exposes everything through FastAPI API routes  
+
 
 ---
 
 ##  Tech Stack
 - FastAPI  
-- Groq API (Embeddings + LLaMA-3)  
+- scikit‑learn (TF‑IDF + cosine similarity)  
+  Amazon S3 (storage)
 - pypdf  
 - scikit-learn  
 - Python 3.10+  
@@ -63,11 +65,13 @@ Uploads the PDF → extracts text → chunks → creates embeddings → stores i
 
 2. Ask a Question
 
-Sends your query → finds similar chunks → LLaMA-3 answers based on context.
+Sends your query → finds similar chunks → returns the most relevant context as the answer.
+
 
 👩‍💻 Author
 
 Divya Bharathi D
 Backend • Cloud • Data Enthusiast 
+
 
 
